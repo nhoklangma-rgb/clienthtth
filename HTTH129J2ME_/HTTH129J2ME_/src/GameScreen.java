@@ -2140,7 +2140,9 @@ public final class GameScreen extends MainScreen {
          }
       }
 
-      System.gc();
+      // Bo System.gc() de tranh stop-the-world pause (5-15s tren J2ME emulator).
+      // checkDelHash o tren da xoa reference -> JVM se tu GC khi can,
+      // khong can force lam treo main thread.
    }
 
    private static void AA(ObjMove var0) {
