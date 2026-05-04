@@ -1,9 +1,12 @@
 
 import java.util.Calendar;
+import java.util.Enumeration;
+import java.util.Hashtable;
 
 public final class AThMadaraFunc {
     private static final int TELEPORT_MAX_TILES = 6;
-    private static java.util.Map<MainMonster,int[]> gomSavedGlobal = null;
+    // J2ME CLDC: dùng Hashtable (raw) thay cho java.util.Map/HashMap
+    private static Hashtable gomSavedGlobal = null;
     private static boolean gomFollowPlayer = false;
     private static int gomMapId = -999999;
     static boolean gomUseMapCenter = false;
@@ -93,7 +96,9 @@ public final class AThMadaraFunc {
         int tileSize = GameCanvas.loadmap != null && GameCanvas.loadmap.wTile > 0
                        ? GameCanvas.loadmap.wTile
                        : (LoadMap.wTile > 0 ? LoadMap.wTile : 24);
-        double teleportMaxPixels = TELEPORT_MAX_TILES * tileSize;
+        // Tính bình phương khoảng cách để tránh Math.sqrt() (J2ME CLDC 1.0 không hỗ trợ)
+        long teleportMaxPixels = (long) TELEPORT_MAX_TILES * tileSize;
+        long teleportMaxSq = teleportMaxPixels * teleportMaxPixels;
 
         for (int iter = 0; iter < n; ++iter) {
             int slot = isAutoNew ? ((p.IndexFire + iter) % n) : iter;
@@ -127,11 +132,11 @@ public final class AThMadaraFunc {
                     } catch (Throwable ex) { ex.printStackTrace(); }
                     break;
                 }
-                double dx = p.x - tgt.x;
-                double dy = p.y - tgt.y;
-                double dist = Math.sqrt(dx * dx + dy * dy);
-                // Sửa: teleport khi quá xa (dist > max), không phải khi quá gần
-                boolean doTeleport = dist > teleportMaxPixels;
+                long dx = p.x - tgt.x;
+                long dy = p.y - tgt.y;
+                long distSq = dx * dx + dy * dy;
+                // teleport khi quá xa (distSq > maxSq) - so sánh bình phương
+                boolean doTeleport = distSq > teleportMaxSq;
 
                 if (doTeleport) {
                     int tx = (tgt.x / tileSize) * tileSize + tileSize / 2;
@@ -161,11 +166,13 @@ public final class AThMadaraFunc {
             return;
         }
         if (p == null || GameScreen.vecPlayers == null) return;
+        // Tick guard: chỉ chạy 1 lần / 4 ticks (~7 lần/giây) đủ cho cảm giác mượt
+        if (GameCanvas.gameTick % 4 != 0) return;
         try {
             int mapId = GameCanvas.loadmap != null ? GameCanvas.loadmap.idMapLoadMap : -1;
             if (gomSavedGlobal == null || gomMapId != mapId) {
                 if (gomSavedGlobal != null) gomSavedGlobal.clear();
-                gomSavedGlobal = new java.util.HashMap<MainMonster,int[]>();
+                gomSavedGlobal = new Hashtable();
                 gomMapId = mapId;
             }
 
@@ -219,8 +226,8 @@ public final class AThMadaraFunc {
         }
     }
 
-    public static java.util.Map<MainMonster,int[]> startGomAllFollow(Player p, int offsetX, int offsetY, boolean follow, boolean useMapCenter) {
-        java.util.Map<MainMonster,int[]> saved = new java.util.HashMap<>();
+    public static Hashtable startGomAllFollow(Player p, int offsetX, int offsetY, boolean follow, boolean useMapCenter) {
+        Hashtable saved = new Hashtable();
         if (p == null) return saved;
 
         try {
@@ -281,15 +288,17 @@ public final class AThMadaraFunc {
                 targetX = p.x + gomOffsetX;
                 targetY = p.y + gomOffsetY;
             } else {
-                java.util.Iterator<java.util.Map.Entry<MainMonster,int[]>> it = gomSavedGlobal.entrySet().iterator();
-                if (!it.hasNext()) return;
-                MainMonster first = it.next().getKey();
+                Enumeration enFirst = gomSavedGlobal.keys();
+                if (!enFirst.hasMoreElements()) return;
+                MainMonster first = (MainMonster) enFirst.nextElement();
                 if (first == null) return;
                 targetX = first.gomX;
                 targetY = first.gomY;
             }
 
-            for (MainMonster m : gomSavedGlobal.keySet()) {
+            Enumeration en = gomSavedGlobal.keys();
+            while (en.hasMoreElements()) {
+                MainMonster m = (MainMonster) en.nextElement();
                 if (m == null) continue;
                 m.gomX = targetX; m.gomY = targetY;
                 m.x = targetX; m.y = targetY;
@@ -303,13 +312,14 @@ public final class AThMadaraFunc {
         }
     }
 
-    public static void stopGomAll(java.util.Map<MainMonster,int[]> saved) {
-        java.util.Map<MainMonster,int[]> toRestore = saved != null ? saved : gomSavedGlobal;
+    public static void stopGomAll(Hashtable saved) {
+        Hashtable toRestore = saved != null ? saved : gomSavedGlobal;
         if (toRestore == null) return;
         try {
-            for (java.util.Map.Entry<MainMonster,int[]> e : toRestore.entrySet()) {
-                MainMonster m = e.getKey();
-                int[] s = e.getValue();
+            Enumeration en = toRestore.keys();
+            while (en.hasMoreElements()) {
+                MainMonster m = (MainMonster) en.nextElement();
+                int[] s = (int[]) toRestore.get(m);
                 if (m == null || s == null || s.length < 8) continue;
                 try {
                     m.x = s[0]; m.y = s[1];
@@ -336,7 +346,15 @@ public final class AThMadaraFunc {
         return t != null && !t.returnAction() && !t.isDie && t.Hp > 0 && !t.isRemove;
     }
 
+    // Cooldown giữa hai lần teleport để tránh flood Sender queue
+    private static long lastTeleportAt = 0L;
+    private static final long TELEPORT_COOLDOWN_MS = 250L;
+
     private static void sendTeleport(Player p, int x, int y) {
+        long now;
+        try { now = GameCanvas.timeNow; } catch (Throwable t) { now = System.currentTimeMillis(); }
+        if (now - lastTeleportAt < TELEPORT_COOLDOWN_MS) return;
+        lastTeleportAt = now;
         try {
             GlobalService.getInstance().Obj_Move((short) x, (short) y);
             p.x = x; p.y = y;
@@ -346,18 +364,33 @@ public final class AThMadaraFunc {
         }
     }
    
+   private static long lastDateTimeBuiltAtSec = -1L;
+   private static String cachedDateTimeStr = "";
+
    public static void paintShowDateTime(mGraphics g) {
         try {
-            Calendar cal = CRes.getTime();
-            String timeStr = String.format(
-                "%02d:%02d:%02d %02d-%02d-%04d",
-                cal.get(Calendar.HOUR_OF_DAY),
-                cal.get(Calendar.MINUTE),
-                cal.get(Calendar.SECOND),
-                cal.get(Calendar.DAY_OF_MONTH),
-                cal.get(Calendar.MONTH) + 1,
-                cal.get(Calendar.YEAR)
-            );
+            long nowSec = System.currentTimeMillis() / 1000L;
+            // Chỉ rebuild string khi giây đổi -> tránh tạo rác mỗi paint frame
+            if (nowSec != lastDateTimeBuiltAtSec) {
+                lastDateTimeBuiltAtSec = nowSec;
+                Calendar cal = CRes.getTime();
+                int hh  = cal.get(Calendar.HOUR_OF_DAY);
+                int mm  = cal.get(Calendar.MINUTE);
+                int ss  = cal.get(Calendar.SECOND);
+                int dd  = cal.get(Calendar.DAY_OF_MONTH);
+                int mon = cal.get(Calendar.MONTH) + 1;
+                int yy  = cal.get(Calendar.YEAR);
+                StringBuffer sb = new StringBuffer(20);
+                pad2(sb, hh); sb.append(':');
+                pad2(sb, mm); sb.append(':');
+                pad2(sb, ss); sb.append(' ');
+                pad2(sb, dd); sb.append('-');
+                pad2(sb, mon); sb.append('-');
+                sb.append(yy);
+                cachedDateTimeStr = sb.toString();
+            }
+            String timeStr = cachedDateTimeStr;
+            if (timeStr == null || timeStr.length() == 0) return;
             int imgW = 22, imgH = 16;
             int chatX = Interface_Game.xNumMess;
             int chatY = Interface_Game.yNumMess;
@@ -427,6 +460,12 @@ public final class AThMadaraFunc {
             } catch (Throwable ignored) {}
         }
     }
-    
-    
+
+    // Helper: append "%02d" vào StringBuffer (thay String.format) - không tạo rác
+    private static void pad2(StringBuffer sb, int v) {
+        if (v < 0) { sb.append('-'); v = -v; }
+        if (v < 10) sb.append('0');
+        sb.append(v);
+    }
+
 }

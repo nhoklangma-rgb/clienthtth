@@ -1911,8 +1911,14 @@ public final class GameScreen extends MainScreen {
          }
 
          for(var1 = 0; var1 < VecNum.size(); ++var1) {
-            if ((var22 = (MainEffect)VecNum.elementAt(var1)) != null && !var22.BI && !var22.isStop) {
+            var22 = (MainEffect)VecNum.elementAt(var1);
+            if (var22 != null && !var22.BI && !var22.isStop) {
                var22.update();
+            } else if (var22 == null || var22.BI) {
+               // Fix leak: remove BI/null entries from VecNum
+               // (mirror VecEffect cleanup above) to prevent unbounded growth
+               VecNum.removeElement(var1);
+               --var1;
             }
          }
 
