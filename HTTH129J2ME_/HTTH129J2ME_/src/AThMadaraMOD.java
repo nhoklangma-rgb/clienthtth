@@ -166,9 +166,12 @@ public void openMenuSellItem() {
     }
     
     // làm sạch cache: xóa các item không còn trong inventory
+    // Guard: chỉ chạy 1 lần / 60 ticks (~2s) để tránh áp lực GC trên emulator
     public static void cleanAutoSellCache() {
         if (Player.vecInventory == null) return;
-        
+        if (autoSellList == null || autoSellList.size() == 0) return;
+        if (GameCanvas.gameTick % 60 != 0) return;
+
         mVector toRemove = new mVector();
         for (int i = 0; i < autoSellList.size(); ++i) {
             short[] s = (short[]) autoSellList.elementAt(i);

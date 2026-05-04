@@ -1,11 +1,13 @@
 import java.util.Enumeration;
-import java.util.concurrent.TimeoutException;
+// removed: import java.util.concurrent.TimeoutException;
+//   (java.util.concurrent khong co trong J2ME CLDC, va class nay khong duoc dung)
 
 public final class Player extends MainPlayer {
    public static boolean isAutoFilterItems = false;
    public boolean isAutoFireNew108 = false;
    public boolean isDongBangQuai111 = false;
-   private java.util.Map<MainMonster,int[]> oldMonsterPos = null;
+   // (dead field java.util.Map<MainMonster,int[]> oldMonsterPos removed:
+   //  java.util.Map khong co trong J2ME CLDC - gay VerifyError tren may that)
    public boolean isGomQuai112 = false;
    public static boolean isAutoRevice = false;
    public boolean isAutoReMap = false;
