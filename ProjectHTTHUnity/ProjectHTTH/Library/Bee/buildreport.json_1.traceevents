@@ -1,0 +1,447 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "Main" } },
+{ "pid": 0, "tid": 1, "ts": 1748094949532849, "dur": 10083561, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094949533293, "dur": 9299, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094949542594, "dur": 31553, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094949574150, "dur": 842249, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094950416401, "dur": 9183639, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094959600043, "dur": 16366, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094959616859, "dur": 65, "ph": "X", "name": "Main", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1748094950110296, "dur": 281966, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950111976, "dur": 84746, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950345695, "dur": 7768, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950353468, "dur": 38777, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950354770, "dur": 22080, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950399978, "dur": 2055, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1748094950398697, "dur": 3379, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094959617033, "dur": 182, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1748094950462309, "dur":671, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094950462992, "dur":46, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1748094950463060, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1748094950463082, "dur":121, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1748094950463235, "dur":880, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094950464115, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586519, "dur":29, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586548, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586565, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586570, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586580, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586601, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959586639, "dur":1496, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1748094950464085, "dur":48, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950464133, "dur":5318, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950469453, "dur":19056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":1, "ts":1748094950488575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950489959, "dur":1269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":1, "ts":1748094950491250, "dur":38619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950529876, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950529888, "dur":782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950530689, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1748094950530725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950530734, "dur":40356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1748094950571122, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1748094950571233, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950571557, "dur":26772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1748094950598351, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1748094950598424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950598432, "dur":2294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1748094950600752, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1748094950600891, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950600899, "dur":10827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1748094950611751, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1748094950611792, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950611853, "dur":7943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1748094950619823, "dur":849, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950620676, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950620685, "dur":698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950621401, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950621439, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950621446, "dur":13309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1748094950634780, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1748094950634827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950634836, "dur":42751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1748094950677618, "dur":238434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094950916059, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950916189, "dur":7909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094950924128, "dur":56448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1748094950980585, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094950980594, "dur":45307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1748094951025931, "dur":604, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0].exe" }}
+,{ "pid":12345, "tid":1, "ts":1748094951026539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951026546, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0].exe" }}
+,{ "pid":12345, "tid":1, "ts":1748094951028027, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1748094951028087, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951028329, "dur":105170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1748094951133623, "dur":248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951133876, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951261274, "dur":871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951262168, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951262274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951262334, "dur":616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951262968, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951263074, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951263081, "dur":23403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951286513, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951286639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951286668, "dur":3151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951289845, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951289971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951289980, "dur":759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951290758, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951290883, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951290890, "dur":800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951291709, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951291803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951291811, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951292596, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951292700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951292708, "dur":1331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951294057, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951294151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951294158, "dur":745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951294920, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951295041, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951295067, "dur":832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951295920, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951296020, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951296027, "dur":835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951296913, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951297068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951297075, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951298663, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951298760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951298768, "dur":850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951299638, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951299729, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951299736, "dur":713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951300466, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951300557, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951300564, "dur":734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951301318, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951301452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951301459, "dur":2836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951304317, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951304419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951304427, "dur":811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951305259, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951305405, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951305412, "dur":785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951306217, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951306306, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951306314, "dur":874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951307208, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951307318, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951307325, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951308863, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951308985, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951308993, "dur":793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951309807, "dur":1135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951310947, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951310977, "dur":1853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951312857, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951313143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951313153, "dur":897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951314069, "dur":36706, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951350784, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951350797, "dur":2783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951353604, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951353722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951353731, "dur":752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951354502, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951354699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951354707, "dur":915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951355641, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951355870, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951355877, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951356941, "dur":52435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951409385, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951409421, "dur":19714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951429161, "dur":26893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951456062, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951456076, "dur":1135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951457235, "dur":48885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951506127, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951506139, "dur":909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951507067, "dur":39064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951546138, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951546150, "dur":981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951547150, "dur":34504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951581663, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951581674, "dur":1810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951583507, "dur":27716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951611231, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951611242, "dur":900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951612164, "dur":66227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951678400, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951678435, "dur":7101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951685561, "dur":110799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951796369, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951796380, "dur":1325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951797728, "dur":116920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951914655, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094951914667, "dur":46388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094951961082, "dur":151763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952112854, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952112865, "dur":35930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952148823, "dur":135243, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952284076, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952284088, "dur":848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952284960, "dur":96387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952381355, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952381366, "dur":837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952382223, "dur":111415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952493646, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952493681, "dur":52215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952545921, "dur":38897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952584827, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952584838, "dur":1107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952585965, "dur":223093, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952809067, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952809079, "dur":912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952810013, "dur":75698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952885719, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952885730, "dur":1368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952887123, "dur":55284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952942416, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952942427, "dur":13053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952955507, "dur":44274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094952999790, "dur":184, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094952999985, "dur":22583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953022598, "dur":59641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953082247, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953082285, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953083101, "dur":112372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953195481, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953195492, "dur":938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953196451, "dur":107832, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953304292, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953304303, "dur":128625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953432953, "dur":131834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953564798, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953564811, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953566357, "dur":69756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953636121, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953636132, "dur":4405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953640564, "dur":89116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953729688, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953729700, "dur":1311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953731054, "dur":104553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953835615, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953835648, "dur":10111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953845789, "dur":124464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953970260, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094953970273, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094953972215, "dur":93906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954066129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094954066140, "dur":4071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954070237, "dur":94731, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954164976, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094954164988, "dur":5090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954170102, "dur":116684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954286794, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094954286805, "dur":37235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954324066, "dur":51003, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954375077, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094954375089, "dur":27235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954402348, "dur":96623, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954498979, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094954498991, "dur":991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094954500006, "dur":627480, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955127494, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094955127507, "dur":30421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955157974, "dur":107873, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955265856, "dur":8, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094955265874, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955266944, "dur":99872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955366824, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094955366836, "dur":1082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955367941, "dur":304438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955672387, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094955672400, "dur":32482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955704909, "dur":187810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955892727, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094955892739, "dur":29364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094955922128, "dur":198808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956120944, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094956120957, "dur":1110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956122090, "dur":62060, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956184158, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094956184170, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956185121, "dur":76580, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956261712, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094956261724, "dur":1215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956262962, "dur":232928, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956495900, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094956495912, "dur":52019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956547951, "dur":352915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956900874, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094956900885, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094956901935, "dur":172240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957074183, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094957074196, "dur":1362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957075583, "dur":77155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957152747, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094957152760, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957153764, "dur":62173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957215942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094957215949, "dur":22119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957238087, "dur":35472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957273567, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094957273578, "dur":1035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094957274633, "dur":1389234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958663874, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094958663886, "dur":23074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958686980, "dur":106810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958793799, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094958793810, "dur":1234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958795071, "dur":81398, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958876477, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094958876488, "dur":1050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094958877557, "dur":204503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959082068, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959082080, "dur":1341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959083445, "dur":252136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959335591, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959335602, "dur":21168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959356789, "dur":21849, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959378647, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959378659, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959380184, "dur":25236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959405429, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959405441, "dur":3618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959409090, "dur":23858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959432956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959432967, "dur":4413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959437408, "dur":21737, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959459153, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959459164, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959460267, "dur":67218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959527492, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959527504, "dur":2335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1748094959529864, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1748094959529890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959529954, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1748094959531058, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959531078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959531086, "dur":27535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959558645, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1748094959558728, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959558738, "dur":640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1748094959559394, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1748094959559465, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959559472, "dur":714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1748094959560206, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1748094959560273, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959560281, "dur":3967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1748094959564272, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1748094959564322, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959564328, "dur":4809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1748094959569178, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959569202, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959569218, "dur":1791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959571026, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959571044, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959571050, "dur":14251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1748094959585330, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1748094959585358, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748094959585367, "dur":996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1748094959586382, "dur":89, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950464011, "dur":115, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950464131, "dur":5301, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950469447, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1748094950469456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950469997, "dur":18486, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1748094950488488, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1748094950488605, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950489066, "dur":2177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1748094950491246, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1748094950491301, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950491734, "dur":21130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1748094950512890, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1748094950512943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950513005, "dur":17277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1748094950530306, "dur":17668, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950547982, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950547997, "dur":23132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950571153, "dur":26717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950597878, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950598002, "dur":1069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950599091, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950599834, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950599845, "dur":885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950600754, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1748094950600821, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950601343, "dur":6555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1748094950607923, "dur":11726, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950619708, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950619789, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094950621078, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1748094950621177, "dur":74, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950621260, "dur":20431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1748094950641718, "dur":58319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094950700045, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094950700454, "dur":1557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094950702041, "dur":5628267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956330315, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094956330325, "dur":216605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956546956, "dur":311472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956858436, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094956858447, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956859400, "dur":71629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956931037, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094956931077, "dur":48402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094956979503, "dur":235883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957215393, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094957215405, "dur":22318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957237750, "dur":217923, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957455681, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094957455692, "dur":1243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957456958, "dur":96627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957553594, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094957553606, "dur":28151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957581782, "dur":209433, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957791223, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094957791235, "dur":21823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957813083, "dur":183344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957996436, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094957996448, "dur":1208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094957997679, "dur":448108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958445795, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094958445807, "dur":5070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958450904, "dur":213387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958664296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094958664304, "dur":22413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958686741, "dur":118130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958804880, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094958804890, "dur":1009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958805922, "dur":70841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958876768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094958876776, "dur":70102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094958946905, "dur":333867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959280779, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959280791, "dur":7278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959288096, "dur":44852, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959332956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959332992, "dur":23490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959356507, "dur":55205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959411720, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959411731, "dur":5515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959417279, "dur":146911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959564198, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959564210, "dur":6367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1748094959570741, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1748094959570786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959570795, "dur":14563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1748094959585379, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094959585461, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748094959585467, "dur":950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Admins/Desktop/HaiTacLocal/HTTH_LOCAL[Ver 1.0]_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1748094959586437, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1748094959586440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748094959589112, "dur":1881, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1748094959617276, "dur": 746, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1748094959616842, "dur": 1223, "ph": "X", "name": "Write chrome-trace events", "args": {} },

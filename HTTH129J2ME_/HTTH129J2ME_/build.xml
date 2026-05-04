@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HTTH129J2ME" default="default" basedir=".">
+    <description>Builds, tests, and runs the project HTTH129J2ME.</description>
+
+    <import file="nbproject/build-impl.xml"/>
+
+    <target name="-post-jar">
+        <!-- Ghi đè manifest -->
+        <jar destfile="${dist.jar}" manifest="${manifest.file}" update="false">
+            <fileset dir="${build.classes.dir}"/>
+        </jar>
+    </target>
+</project>
