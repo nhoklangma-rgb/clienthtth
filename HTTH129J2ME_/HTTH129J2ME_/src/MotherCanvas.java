@@ -62,6 +62,9 @@ public abstract class MotherCanvas extends Canvas implements Runnable {
    }
    
 
+   // Frame target (ms). 35 = ~28 FPS (cu, tu tu). 22 = ~45 FPS (muot + game speed +50%).
+   public static long frameTargetMs = 22L;
+
    public void run() {
       hasPointerEvents = true;
 
@@ -73,8 +76,10 @@ public abstract class MotherCanvas extends Canvas implements Runnable {
          long var3 = System.currentTimeMillis() - var1;
 
          try {
-            if (var3 < 35L) {
-               Thread.sleep(35L - var3);
+            long target = frameTargetMs;
+            if (target < 1L) target = 1L;
+            if (var3 < target) {
+               Thread.sleep(target - var3);
             } else {
                Thread.sleep(1L);
             }
